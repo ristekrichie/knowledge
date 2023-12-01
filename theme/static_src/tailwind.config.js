@@ -46,9 +46,12 @@ module.exports = {
         colors: {
             white: colors.white,
             black: colors.black,
-            cfe: "#007cae",
-            cfeBlue: {
-              100: "#007cad"
+            blue: {
+                50: '#d5d9ea',
+                100: '#86b3cb',
+                200: '#82d4ed',
+                300: '#3abae3',
+                400: '#0c77a8',
             },
             stone: colors.stone,
             sky: colors.sky,
