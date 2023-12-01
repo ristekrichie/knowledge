@@ -4,6 +4,7 @@
  * If you need the full config, get it from here:
  * https://unpkg.com/browse/tailwindcss@latest/stubs/defaultConfig.stub.js
  */
+const colors = require('tailwindcss/colors')
 
 module.exports = {
     content: [
@@ -42,6 +43,17 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
+        colors: {
+            white: colors.white,
+            black: colors.black,
+            cfe: "#007cae",
+            cfeBlue: {
+              100: "#007cad"
+            },
+            stone: colors.stone,
+            sky: colors.sky,
+            violet: colors.violet,
+        },
         extend: {},
     },
     plugins: [
