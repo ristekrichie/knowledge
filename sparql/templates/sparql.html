@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container h-16 max-w-full">
+    <p class="text-2xl font-bold text-center">Sparql Query</p>
+</div>
+<div class="max-w-full">
+    <form method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        {% csrf_token %}
+        <textarea class="h-32 w-full" id="query" name="query">
+
+      </textarea>
+      <div class="flex flex-col items-center justify-center">
+        <button action = "submit" class="allign-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            query
+        </button>
+      </div>
+      
+    </form>
+</div>
+<p>{{isi}}</p>
+<p>{{error|linebreaksbr}}</p>
+{% endblock content %}
